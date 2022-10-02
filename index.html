@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>the delta project</title>
+    <script src="https://unpkg.com/moralis-v1/dist/moralis.js"></script>
+    <script defer src="./script.js"></script>
+    <style>
+      @import url("./style.css");
+    </style>
+  </head>
+  <body>
+    <div class="screen">
+      <h1 class="title">the delta project</h1>
+      <div class="middle-div">
+        <div class="box">
+          <div class="line-holder">
+            <div class="line-div">
+              <h2 class="line-text">Contract</h2>
+              <h2 class="line-number" id="contract-value">0 BNB</h2>
+            </div>
+            <div class="line-div">
+              <h2 class="line-text">Wallet</h2>
+              <h2 class="line-number" id="wallet-value">0 BNB</h2>
+            </div>
+            <div class="line-div">
+              <h2 class="line-text">Total Yield</h2>
+              <h2 class="line-number" id="total-yield-value">3%</h2>
+            </div>
+
+            <div class="line-div">
+              <h2 class="line-text">‎</h2>
+              <input type="number" class="deposit-input-field" id="depost" />
+            </div>
+            <div class="line-div">
+              <h2 class="line-text">‎</h2>
+              <button class="deposit-btn" onclick="deposit()">Deposit</button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="line-holder">
+            <!-- <div class="line-div">
+              <h2 class="line-text">Your Partners</h2>
+              <h2 class="line-number" id="partner-value">0</h2>
+            </div> -->
+            <!-- <div class="line-div">
+              <h2 class="line-text">Referral</h2>
+              <input type="text" class="referral-input-field" id="referral" />
+            </div> -->
+            <div class="line-div">
+              <h2 class="line-text">Withdrawable</h2>
+              <h2 class="line-number" id="withdraw-value">0 BNB</h2>
+            </div>
+            <div class="line-div">
+              <h2 class="line-text">‎</h2>
+              <button class="withdraw-btn" onclick="withdraw()">
+                Withdraw
+              </button>
+              <button class="redeposit-btn" onclick="redeposit()">
+                Re-deposit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
